@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE1F3837FEBA2609EA0D7E4 /* Pods_testRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3307755E116A97F09C740B9B /* Pods_testRSA.framework */; };
 		523799721F0A7007003904AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523799711F0A7007003904AA /* AppDelegate.swift */; };
 		523799741F0A7007003904AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523799731F0A7007003904AA /* ViewController.swift */; };
 		523799771F0A7007003904AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523799751F0A7007003904AA /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3307755E116A97F09C740B9B /* Pods_testRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A3FED7973D3EA1CB6A89C0 /* Pods-testRSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRSA.release.xcconfig"; path = "Pods/Target Support Files/Pods-testRSA/Pods-testRSA.release.xcconfig"; sourceTree = "<group>"; };
 		5237996E1F0A7007003904AA /* testRSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523799711F0A7007003904AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523799731F0A7007003904AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		523799781F0A7007003904AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5237997B1F0A7007003904AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5237997D1F0A7007003904AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F361B847DB1A5A06E31AE4 /* Pods-testRSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRSA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testRSA/Pods-testRSA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE1F3837FEBA2609EA0D7E4 /* Pods_testRSA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				523799701F0A7007003904AA /* testRSA */,
 				5237996F1F0A7007003904AA /* Products */,
+				AEA986703F54F9AE8F4F8CF2 /* Pods */,
+				EBEB0B330A7079E0AEBE27D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = testRSA;
 			sourceTree = "<group>";
 		};
+		AEA986703F54F9AE8F4F8CF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9F361B847DB1A5A06E31AE4 /* Pods-testRSA.debug.xcconfig */,
+				39A3FED7973D3EA1CB6A89C0 /* Pods-testRSA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBEB0B330A7079E0AEBE27D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3307755E116A97F09C740B9B /* Pods_testRSA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 523799801F0A7007003904AA /* Build configuration list for PBXNativeTarget "testRSA" */;
 			buildPhases = (
+				AAB9C22870B06BCE293357BF /* [CP] Check Pods Manifest.lock */,
 				5237996A1F0A7007003904AA /* Sources */,
 				5237996B1F0A7007003904AA /* Frameworks */,
 				5237996C1F0A7007003904AA /* Resources */,
+				76C29DBA7EB44DA9FEDA9783 /* [CP] Embed Pods Frameworks */,
+				22505C39587153648377D571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22505C39587153648377D571 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testRSA/Pods-testRSA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C29DBA7EB44DA9FEDA9783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testRSA/Pods-testRSA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB9C22870B06BCE293357BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5237996A1F0A7007003904AA /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		523799811F0A7007003904AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F361B847DB1A5A06E31AE4 /* Pods-testRSA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2K32P84892;
@@ -272,6 +348,7 @@
 		};
 		523799821F0A7007003904AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A3FED7973D3EA1CB6A89C0 /* Pods-testRSA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2K32P84892;
